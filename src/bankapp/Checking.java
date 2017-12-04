@@ -1,19 +1,19 @@
 package bankapp;
-
+//Class for checking account
 public class Checking extends Account{
 	private static String accountType = "Checking";
 	
+	//Constructor. Takes initialDeposit as parameter
 	Checking(double initialDeposit){
 		this.setBalance(initialDeposit);
 		this.checkInterest(0);
 	}
 	
+	//Return the account type
 	@Override
-	public String toString(){
-		return "Accout Type" + accountType + "Account\n" + 
-				"Account Number: " + this.getAccountNumber() + "\n" + 
-				"Balance: " + this.getBalance() + "\n" + 
-				"Interest Rate: " + this.getInterest() + "\n";
+	public String getAccountType(){
+		return accountType;
 	}
+	
 
 }

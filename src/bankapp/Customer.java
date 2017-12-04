@@ -1,61 +1,44 @@
 package bankapp;
 
-public class Customer{
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Customer implements Serializable{
+	//Instance variables
     private final String firstName;
     private final String lastName;
     private final String ssn;
     private final Account account;
     
-
+	
+    
+    //Constructor. Takes first name, last name, social security number and account as parameters. 
     Customer(String firstName, String lastName, String ssn, Account account) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.ssn = ssn;
         this.account = account;
-    }
+    }    
     
-    @Override
-    public String toString(){
-    	return "\nCustomer information\n" +  
-    			"First name: " + firstName + "\n" +
-    			"Last name: " + lastName + "\n" +
-    			"SSN: " + ssn + "\n" +
-    			account;
-    
-    }
-    
-    public String basicInfo(){
-    	return " Account Number: " + account.getAccountNumber() + " - Name:" + firstName + " " + lastName ; 
-    			
-    			
-    
-    }
-    
-    
-    
+    //Get account
     Account getAccount(){
         return account;
     }
 
-    /**
-     * @return the firstName
-     */
+    //Return First name
     public String getFirstName() {
         return firstName;
     }
 
-    /**
-     * @return the lastName
-     */
+    //Return Last name
     public String getLastName() {
         return lastName;
     }
 
-    /**
-     * @return the ssn
-     */
+    //Return social security number
     public String getSsn() {
         return ssn;
     }
+    
     
 }
