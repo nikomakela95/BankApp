@@ -3,7 +3,7 @@ package bankapp;
 import java.io.File;
 
 import javax.swing.filechooser.FileFilter;
-
+//Class is needed for saving to file
 public class BankFilter extends FileFilter {
 
 	//Method for accepting the file we are opening
