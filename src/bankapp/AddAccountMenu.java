@@ -35,6 +35,7 @@ public class AddAccountMenu extends JDialog {
 	public AddAccountMenu(Bank bank, boolean modal, java.awt.Frame parent) {
 		//call parent constructor
 		super(parent, modal);
+		setTitle("Add Account");
 		//JDialog setup
 		setLocationRelativeTo(parent);
 		setBounds(100, 100, 450, 300);
@@ -62,11 +63,11 @@ public class AddAccountMenu extends JDialog {
 		contentPanel.add(lblNewLabel);
 		
 		JLabel lblInitialDeposit = new JLabel("Initial Deposit");
-		lblInitialDeposit.setBounds(10, 112, 71, 30);
+		lblInitialDeposit.setBounds(10, 112, 142, 30);
 		contentPanel.add(lblInitialDeposit);
 		
 		JLabel lblType = new JLabel("Account Type");
-		lblType.setBounds(10, 153, 71, 30);
+		lblType.setBounds(10, 153, 156, 30);
 		contentPanel.add(lblType);
 		
 		//Field for first name

@@ -27,6 +27,7 @@ public class DepositMenu extends JDialog {
 	//Constructor with parameters parent, modal, bank and customer
 	public DepositMenu(java.awt.Frame parent, boolean modal, Bank bank, Customer customer) {
 		super(parent, modal);
+		setTitle("Deposit");
 		this.customer = customer;
 		JDialog dialog = this;
 		
@@ -77,7 +78,7 @@ public class DepositMenu extends JDialog {
 				                if(confirm == JOptionPane.OK_OPTION ){
 				                //Do deposit when action is confirmed	
 				                customer.getAccount().deposit(amount);
-				                JOptionPane.showMessageDialog(null, "The deposit was successful!\nYou got " + customer.getAccount().getInterest() + "% interst (" + (amount * customer.getAccount().getInterest() / 100) + "€)");
+				                JOptionPane.showMessageDialog(null, "The deposit was successful!\nYou got " + customer.getAccount().getInterest() + "% interest (" + (amount * customer.getAccount().getInterest() / 100) + "€)");
 				                dialog.dispose(); // Close JDialog
 				                }
 				                }

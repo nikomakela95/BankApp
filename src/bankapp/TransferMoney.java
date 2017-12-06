@@ -30,9 +30,10 @@ public class TransferMoney extends JDialog {
 	public TransferMoney(java.awt.Frame parent, boolean modal, Bank bank, Customer customer, JTable accountTable) {
 		//Calls parent constructor with arguments parent and modal
 		super(parent, modal);
+		setTitle("Transfer money");
 		
 		this.accountTable = accountTable;
-		setBounds(100, 100, 875, 189);
+		setBounds(100, 100, 484, 189);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);

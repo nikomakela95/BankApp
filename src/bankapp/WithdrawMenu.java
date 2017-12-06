@@ -27,6 +27,7 @@ public class WithdrawMenu extends JDialog {
 	public WithdrawMenu(java.awt.Frame parent, boolean modal, Bank bank, Customer customer) {
 		//calls parent constructor with arguments parent and modal
 		super(parent, modal);
+		setTitle("Withdraw");
 		this.customer = customer;
 		JDialog dialog = this;
 		

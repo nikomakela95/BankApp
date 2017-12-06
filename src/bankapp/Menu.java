@@ -243,6 +243,7 @@ public class Menu extends JFrame {
 		accountTable = new JTable();
 		accountTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		accountTable.setAutoCreateRowSorter(false);
+		accountTable.getTableHeader().setReorderingAllowed(false);
 		scrollPane.setViewportView(accountTable);
 		accountTable.setModel(new DefaultTableModel(
 			new Object[][] {
